@@ -1,0 +1,15 @@
+.pd-input {
+  @apply block min-w-full min-h-[2.5rem] p-2;
+  @apply input input-bordered input-accent;
+  @apply placeholder:capitalize;
+}
+
+.pd-textarea {
+  @apply block min-w-full min-h-[2.5rem] p-2;
+  @apply textarea textarea-bordered textarea-accent resize-none;
+  @apply placeholder:capitalize;
+}
+
+.pd-label {
+  @apply font-semibold capitalize;
+}

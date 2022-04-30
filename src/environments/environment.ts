@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  cloudinaryUrl: 'https://api.cloudinary.com/v1_1',
+  cloudinaryName: 'djq5o9jxq',
+  folder: 'hackaton',
+  uploadPresets: 'xebiqicu',
 };
 
 /*
