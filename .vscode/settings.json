@@ -3,6 +3,9 @@
         "*.css": "tailwindcss"
     },
     "cSpell.words": [
-        "daisyui"
+        "cloudinary",
+        "daisyui",
+        "Scully",
+        "scullyio"
     ]
 }
