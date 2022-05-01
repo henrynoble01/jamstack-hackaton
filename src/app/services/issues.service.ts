@@ -14,7 +14,7 @@ export class IssuesService {
     this.cloudinaryUrl = `${environment.cloudinaryUrl}`;
   }
 
-  getProducts(): Observable<any | null> {
+  getIssues(): Observable<any | null> {
     return this.http
       .get('http://localhost:3000/issues?_sort=id&_order=desc')
       .pipe(
@@ -25,7 +25,7 @@ export class IssuesService {
       );
   }
 
-  getProduct(id: any): Observable<any | null> {
+  getIssue(id: any): Observable<any | null> {
     return this.http.get(`http://localhost:3000/issues/${id}`).pipe(
       retry(2),
       map((res: any) => {

@@ -25,7 +25,6 @@ export class ReportIssuesComponent implements OnInit {
     this.issueForm = this.builder.group({
       topic: ['', Validators.required],
       location: ['', Validators.required],
-
       description: ['', Validators.required],
     });
   }
@@ -36,11 +35,12 @@ export class ReportIssuesComponent implements OnInit {
       this.issueService
         .addIssue({
           ...this.issueForm?.value,
-          imageUrl: res.url,
+          url: res.url,
           uploadDate: new Date().toISOString().split('T')[0],
           uploadDateIso: new Date().toJSON(),
           public_id: res.public_id,
           likes: 0,
+          format: this.format,
         })
         .subscribe(() => {
           console.log('Loading', this.loading);

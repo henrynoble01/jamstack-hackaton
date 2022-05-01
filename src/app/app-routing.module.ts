@@ -6,9 +6,9 @@ import { ReportIssuesComponent } from './component/report-issues/report-issues.c
 
 const routes: Routes = [
   { path: '', redirectTo: 'issues', pathMatch: 'full' },
-  { path: 'issues', component: DisplayIssueComponent },
+  { path: 'issues', component: DisplayIssuesComponent },
   { path: 'report-issues', component: ReportIssuesComponent },
-  { path: 'issues/:id', component: DisplayIssuesComponent },
+  { path: 'issues/:id', component: DisplayIssueComponent },
 ];
 
 @NgModule({

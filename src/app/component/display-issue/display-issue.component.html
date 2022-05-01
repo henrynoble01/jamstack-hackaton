@@ -1,1 +1,20 @@
-<p>display-issue works!</p>
+<ng-container>
+  <div class="">
+    <h2 class="font-bold">{{ issueDetails.topic }}</h2>
+  </div>
+
+  <advanced-image
+    [cldImg]="img"
+    *ngIf="issueDetails.format === 'image'"
+  ></advanced-image>
+
+  <advanced-video
+    [cldVid]="vid"
+    *ngIf="issueDetails.format === 'video'"
+    controls
+  ></advanced-video>
+
+  <p class="">
+    {{ issueDetails.description }}
+  </p>
+</ng-container>
